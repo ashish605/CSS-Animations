@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .conatiner {
+            background-color: rgb(193, 231, 231);
+            width: 50vw;
+            height: 80vw;
+        }
+
+        .box {
+            width: 5vw;
+            height: 5vh;
+
+            animation: ashish 3s infinite ease-in-out, ashish1 3s ease-in-out infinite;
+
+            /*animation-play-state: paused;*/
+
+        }
+
+        @keyframes ashish {
+
+            from {
+                background-color: aqua;
+            }
+
+            to {
+                transform: translateX(690px);
+                background-color: aquamarine;
+            }
+        }
+
+
+        @keyframes ashish1 {
+
+            0% {
+                transform: rotate(100deg);
+            }
+
+            20% {
+                transform: rotate(200deg);
+            }
+
+            50% {
+                transform: rotate(250deg);
+            }
+
+            80% {
+                transform: rotate(300deg);
+            }
+
+            100% {
+                transform: rotate(350deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <div class="box"> box</div>
+    </div>
+</body>
+
+</html>
